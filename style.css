@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Lexend;
+    src: url(fonts/Lexend/Lexend-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Hind Madurai;
+    src: url(fonts/Hind_Madurai/HindMadurai-Regular.ttf);
+}
+@keyframes baner{
+    0% {color: #F0F7F4;}
+    25% {color: #949494}
+    50% {color: #5a5a5a;}
+    75% {color: #949494;}
+    100% {color: #F0F7F4;}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #0E1A23;
+    color: #F0F7F4;
+    width: 100%;
+}
+header{
+    display: flex;
+    background-color: #0B141A;
+    height: 10vh;
+    font-family: 'Lexend';
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+footer{
+    background-color: #0B141A;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Lexend';
+    text-align: center;
+    height: 10vh;
+    width: 100%;
+}
+header p>img{
+    height: 5vh;
+}
+header p{
+    width: 20%;
+    align-items: center;
+}
+nav{
+    width: 80%;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+li{
+    display: inline-block;
+    padding: 50px;
+}
+a{
+    color: #F0F7F4;
+    text-decoration: none;
+    transition: ease-out 0.25s;
+}
+a:hover{
+    font-weight: bolder;
+    color: #949494;
+    font-size: larger;
+}
+img#baner{
+    width: 100%;
+    opacity: 50%;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+p.centered{
+    font-family: Lexend;
+    font-size: 30px;
+    color: #f0f7f4af;
+}
+p.centered>span{
+    color: #a81a12;
+    font-weight: bold;
+}
+section{
+    font-family: 'Hind Madurai';
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+section>h1{
+    font-family: 'Lexend';
+    text-align: center;
+    font-size: xx-large;
+    padding: 50px;
+}
+article{
+    flex: 50%;
+}
+
