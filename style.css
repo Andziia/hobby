@@ -96,7 +96,6 @@ img#baner{
     color: #a81a12;
     font-weight: bold;
 }
-
 #content{
     position: relative;
     display: flex;
@@ -105,7 +104,6 @@ img#baner{
     justify-content: center;
     z-index: 0;
 }
-
 section{
     font-family: 'Hind Madurai';
     display: flex;
