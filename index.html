@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +8,7 @@
 </head>
 <body>
     <header id="poczatek">
-        <p>
-            <img src="img/logo.png">
-        </p>
+        <a href="index.html" id="img"><img src="img/logo.png" alt="logo"></a>
         <nav>
             <ul>
                 <li><a href="index.html">Strona główna</a></li>
@@ -22,14 +20,36 @@
             </ul>
         </nav>
     </header>
+    
     <div class="baner">
         <img src="img/baner.png" alt="bolidy na torze" id="baner">
-        <p class="centered">Rywalizacja. Adrenalina. Emocje. <span>Formuła 1</span></p>
+        <div class="centered">
+            <p>Rywalizacja. Adrenalina. Emocje. <span>Formuła 1</span></p>
+        </div>
+        
     </div>
     <section>
-        <h1>Formuła 1 - Królowa motorsportu</h1>
+        <article id="title">
+            <h1>Formuła 1 - Królowa motorsportu</h1>
+        </article>
         
+        <article>
+            <h3>Czym właściwie jest Formuła 1?</h3>
+            <p>Formuła 1 (F1) to najbardziej prestiżowa i zaawansowana technologicznie seria wyścigów samochodowych na świecie. To sport, w którym liczy się każdy ułamek sekundy, a rywalizacja toczy się na najwyższym poziomie – zarówno między kierowcami, jak i zespołami inżynierów, mechaników oraz strategów.
+
+                W F1 biorą udział specjalnie zaprojektowane bolidy, które osiągają prędkości przekraczające 350 km/h. Wyścigi odbywają się na torach wyścigowych i ulicznych w różnych zakątkach globu – od Monaco, przez Monzę, aż po Suzukę i Las Vegas.
+                
+                To nie tylko sport, ale i widowisko, które przyciąga miliony fanów na całym świecie. Każdy sezon składa się z kilkunastu Grand Prix, a na końcu wyłaniany jest mistrz świata – zarówno w klasyfikacji kierowców, jak i konstruktorów.
+                
+                Formuła 1 to połączenie adrenaliny, innowacji technologicznych i pasji do rywalizacji. To esencja motorsportu.</p>
+        </article>
+        <article id="video">
+            <video controls autoplay muted loop>
+                <source src="img/f1.mp4" type="video/mp4">
+            </video>
+        </article>
     </section>
+
     <footer>
         <p>Copyright &copy; 2025 Anna Wątko. Wszelkie prawa zastrzeżone. <a href="#poczatek">Powrót na początek</a></p>
     </footer>

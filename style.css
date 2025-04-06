@@ -34,6 +34,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 1;
+    width: 100%;
 }
 footer{
     background-color: #0B141A;
@@ -45,8 +46,8 @@ footer{
     height: 10vh;
     width: 100%;
 }
-header p>img{
-    height: 5vh;
+header img{
+    height: 5.5vh;
 }
 header p{
     width: 20%;
@@ -57,6 +58,7 @@ nav{
     text-align: center;
     font-size: large;
     font-weight: bold;
+    display: flex;
 }
 li{
     display: inline-block;
@@ -67,10 +69,14 @@ a{
     text-decoration: none;
     transition: ease-out 0.25s;
 }
-a:hover{
+a:hover:not(#img){
     font-weight: bolder;
     color: #949494;
     font-size: larger;
+}
+div.baner{
+    min-height: fit-content;
+    position: relative;
 }
 img#baner{
     width: 100%;
@@ -82,32 +88,40 @@ img#baner{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-p.centered{
+.centered p{
     font-family: Lexend;
     font-size: 30px;
     color: #f0f7f4af;
 }
-p.centered>span{
+.centered span{
     color: #a81a12;
     font-weight: bold;
 }
 section{
     font-family: 'Hind Madurai';
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    margin-left: 10vh;
-    margin-right: 10vh;
+    text-align: justify;
     display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
+    margin: 60px 20px;
 }
-section>h1{
+article#title{
+    flex: 100%;
+}
+article#title h1{
     font-family: 'Lexend';
     text-align: center;
     font-size: xx-large;
-    padding: 50px;
+    margin: 50px;
 }
-article{
-    flex: 50%;
+article:not(article#title){
+    padding: 20px 5vw;
+    flex: 35%;
+    font-size: large;
+}
+video{
+    width: 100%;
 }
 
