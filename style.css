@@ -6,13 +6,6 @@
     font-family: Hind Madurai;
     src: url(fonts/Hind_Madurai/HindMadurai-Regular.ttf);
 }
-@keyframes baner{
-    0% {color: #F0F7F4;}
-    25% {color: #949494}
-    50% {color: #5a5a5a;}
-    75% {color: #949494;}
-    100% {color: #F0F7F4;}
-}
 
 *{
     margin: 0;
@@ -55,14 +48,19 @@ header p{
 }
 nav{
     width: 80%;
+    position: relative;
     text-align: center;
     font-size: large;
     font-weight: bold;
     display: flex;
+    z-index: 1;
 }
-li{
+header li{
+    text-align: center;
     display: inline-block;
-    padding: 50px;
+    width: auto;
+    margin: 0;
+    padding: 30px 50px;
 }
 a{
     color: #F0F7F4;
@@ -107,10 +105,10 @@ section{
     flex-wrap: wrap;
     margin: 60px 20px;
 }
-article#title{
-    flex: 100%;
+article#title, article#rywalizacja{
+    flex: 100% !important;
 }
-article#title h1{
+article h1{
     font-family: 'Lexend';
     text-align: center;
     font-size: xx-large;
@@ -121,7 +119,97 @@ article:not(article#title){
     flex: 35%;
     font-size: large;
 }
+article h3{
+    padding: 20px;
+    text-align: center;
+}
 video{
     width: 100%;
 }
-
+article p{
+    padding: 10px;
+}
+article p span{
+    font-weight: bold;
+    color: #a81a12;
+}
+ul#rywalizacja{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul#rywalizacja li{
+    flex: 30%;
+    padding: 20px;
+}
+li h3{
+    text-decoration: underline;
+}
+article img{
+    width: 100%;
+}
+article#img{
+    text-align: center;
+}
+section#calendar{
+    text-align: center;
+}
+section#calendar article{
+    flex: 20%;
+}
+section#calendar table{
+    margin: 0 auto;
+}
+section#calendar h2{
+    padding: 20px;
+}
+section#calendar tr{
+    height: 50px;
+}
+section#calendar th{
+    width: 50px;
+}
+section#calendar ul{
+    list-style-type: none;
+}
+section#calendar li{
+    padding: 20px;
+    display: inline;
+    border-radius: 5%;
+}
+#practice{
+    background-color: #145c26 ;
+    border-radius: 50% 50%
+}
+#sprint{
+    background-color: #00466e
+}
+#qual{
+    background-color: #a81a12
+}
+#grand{
+    background-color: #e2a600;
+    border-radius: 50% 50%
+}
+#praQual{
+    background: linear-gradient(
+        to right,
+        #145c26 0%,
+        #145c26 50%,
+        #a81a12 50%,
+        #a81a12 100%
+    );
+    border-radius: 50% 50%
+}
+#sprintQual{
+    background: linear-gradient(
+        to right,
+        #00466e 0%,
+        #00466e 50%,
+        #a81a12 50%,
+        #a81a12 100%
+    );
+    border-radius: 50% 50%
+}
