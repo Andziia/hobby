@@ -239,3 +239,15 @@ section#calendar li{
     );
     border-radius: 50%
 }
+section#tory{
+    justify-content: center;
+}
+section#tory article{
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+hr{
+    size: 2;
+    color: #F0F7F4;
+    width: 90%;
+}
