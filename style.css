@@ -17,14 +17,15 @@ body{
     width: 100%;
 }
 header{
-    display: flex;
     background-color: #0B141A;
-    height: 10vh;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    min-height: fit-content;
     font-family: 'Lexend';
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    position: sticky;
     top: 0;
     z-index: 1;
     width: 100%;
@@ -40,7 +41,7 @@ footer{
     width: 100%;
 }
 header img{
-    height: 5.5vh;
+    max-width: 150px;
 }
 header p{
     width: 20%;
@@ -52,7 +53,6 @@ nav{
     text-align: center;
     font-size: large;
     font-weight: bold;
-    display: flex;
     z-index: 1;
 }
 header li{
@@ -60,7 +60,7 @@ header li{
     display: inline-block;
     width: auto;
     margin: 0;
-    padding: 30px 50px;
+    padding: 2vw 2vw;
 }
 a{
     color: #F0F7F4;
@@ -88,22 +88,31 @@ img#baner{
 }
 .centered p{
     font-family: Lexend;
-    font-size: 30px;
+    font-size: 2vw;
     color: #d0d4d2;
+    text-align: center;
 }
 .centered span{
     color: #a81a12;
     font-weight: bold;
 }
+
+#content{
+    position: relative;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
 section{
     font-family: 'Hind Madurai';
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
     display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
-    margin: 60px 20px;
+    width: 100%;
+    text-align: justify;
 }
 article#title, article#rywalizacja{
     flex: 100% !important;
@@ -114,16 +123,21 @@ article h1{
     font-size: xx-large;
     margin: 50px;
 }
-article:not(article#title){
-    padding: 20px 5vw;
-    flex: 35%;
+article{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    flex: 40%;
     font-size: large;
 }
 article h3{
     padding: 20px;
     text-align: center;
 }
-video{
+article video{
+    width: 100%;
+}
+article img{
     width: 100%;
 }
 article p{
@@ -157,7 +171,7 @@ section#calendar{
     text-align: center;
 }
 section#calendar article{
-    flex: auto;
+    flex: 30%;
     display: inline-block;
 }
 section#calendar table{
@@ -174,17 +188,11 @@ section#calendar th{
 }
 section#calendar ul{
     list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 }
 section#calendar li{
-    max-width: fit-content;
-    padding: 15px;
-    margin: 10px;
+    padding: 20px;
+    display: inline;
     border-radius: 5%;
-    flex: 90%;
 }
 #practice{
     background-color: #145c26 ;
