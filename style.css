@@ -21,7 +21,7 @@ header{
     position: sticky;
     display: flex;
     flex-direction: row;
-    min-height: fit-content;
+    min-height: 120px;
     font-family: 'Lexend';
     justify-content: space-around;
     align-items: center;
