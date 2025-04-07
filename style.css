@@ -7,20 +7,63 @@
     src: url(fonts/Hind_Madurai/HindMadurai-Regular.ttf);
 }
 
-*{
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    header p, nav {
+        width: 100%;
+    }
+
+    nav {
+        font-size: medium;
+    }
+
+    header li {
+        padding: 1.5vw 2vw;
+    }
+
+    .centered p {
+        font-size: 3.5vw;
+    }
+
+    article {
+        flex: 100%;
+        margin: 20px 10px;
+    }
+
+    ul#rywalizacja li {
+        flex: 100%;
+    }
+
+    section#calendar article {
+        flex: 100%;
+    }
+
+    section#zespoly article {
+        flex: 100%;
+    }
+}
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #0E1A23;
     color: #F0F7F4;
     width: 100%;
 }
-header{
+
+header {
     background-color: #0B141A;
     position: sticky;
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
     min-height: 120px;
     font-family: 'Lexend';
     justify-content: space-around;
@@ -30,7 +73,8 @@ header{
     z-index: 1;
     width: 100%;
 }
-footer{
+
+footer {
     background-color: #0B141A;
     justify-content: center;
     display: flex;
@@ -40,14 +84,17 @@ footer{
     height: 10vh;
     width: 100%;
 }
-header img{
+
+header img {
     max-width: 150px;
 }
-header p{
+
+header p {
     width: 20%;
     align-items: center;
 }
-nav{
+
+nav {
     width: 80%;
     position: relative;
     text-align: center;
@@ -55,200 +102,227 @@ nav{
     font-weight: bold;
     z-index: 1;
 }
-header li{
+
+header li {
     text-align: center;
     display: inline-block;
     width: auto;
     margin: 0;
     padding: 2vw 2vw;
 }
-a{
+
+a {
     color: #F0F7F4;
     text-decoration: none;
     transition: ease-out 0.25s;
 }
-a:hover:not(#img){
+
+a:hover:not(#img) {
     font-weight: bolder;
     color: #949494;
     font-size: larger;
 }
-div.baner{
+
+div.baner {
     min-height: fit-content;
     position: relative;
 }
-img#baner{
+
+img#baner {
     width: 100%;
-    opacity: 50%
+    opacity: 50%;
 }
+
 .centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.centered p{
+
+.centered p {
     font-family: Lexend;
     font-size: 2vw;
     color: #d0d4d2;
     text-align: center;
 }
-.centered span{
+
+.centered span {
     color: #a81a12;
     font-weight: bold;
 }
-#content{
-    position: relative;
-    display: flex;
-    flex-direction: column;  
-    align-items: center;
-    justify-content: center;
-    z-index: 0;
-}
-section{
+
+section {
     font-family: 'Hind Madurai';
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     text-align: justify;
 }
+
 article#title, article#rywalizacja{
     flex: 100% !important;
 }
-article h1{
+
+article h1 {
     font-family: 'Lexend';
     text-align: center;
     font-size: xx-large;
     margin: 50px;
 }
-article{
+
+article {
     margin-left: 50px;
     margin-right: 50px;
     padding: 20px;
     flex: 40%;
     font-size: large;
 }
-article h3{
+
+article h3 {
     padding: 20px;
     text-align: center;
 }
-article video{
+
+article video {
     width: 100%;
 }
-article img{
+
+article img {
     width: 100%;
 }
-article p{
+
+article p {
     padding: 10px;
 }
-article p span{
+
+article p span {
     font-weight: bold;
     color: #a81a12;
 }
-ul#rywalizacja{
+
+ul#rywalizacja {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: inline-flex;
     flex-wrap: wrap;
 }
-ul#rywalizacja li{
+
+ul#rywalizacja li {
     flex: 40%;
     padding: 20px;
 }
-li h3{
+
+li h3 {
     text-decoration: underline;
 }
-article img{
-    width: 100%;
-}
-article#img{
+
+article#img {
     text-align: center;
 }
-section#calendar{
+
+section#calendar {
     text-align: center;
 }
-section#calendar article{
+
+section#calendar article {
     flex: 30%;
     display: inline-block;
 }
-section#calendar table{
+
+section#calendar table {
     margin: 0 auto;
 }
-section#calendar h2{
+
+section#calendar h2 {
     padding: 30px;
 }
-section#calendar tr{
+
+section#calendar tr {
     height: min(5vw, 50px);
 }
-section#calendar th{
+
+section#calendar th {
     width: min(5vw, 50px);
 }
-section#calendar ul{
+
+section#calendar ul {
     list-style-type: none;
 }
-section#calendar li{
+
+section#calendar li {
     padding: 20px;
     margin: 10px;
     display: inline-flex;
     border-radius: 5%;
 }
-#practice{
-    background-color: #145c26 ;
-    border-radius: 50%
+
+#practice {
+    background-color: #145c26;
+    border-radius: 50%;
 }
-#sprint{
-    background-color: #00466e
+
+#sprint {
+    background-color: #00466e;
 }
-#qual{
-    background-color: #a81a12
+
+#qual {
+    background-color: #a81a12;
+    border-radius: 50%;
 }
-#grand{
+
+#grand {
     background-color: #e2a600;
-    border-radius: 50%
+    border-radius: 50%;
 }
-#sprintShoot{
+
+#sprintShoot {
     background-color: #5e04a8;
 }
-#praSprint{
-    background: linear-gradient(
-        to right,
-        #145c26 0%,
-        #145c26 50%,
-        #5e04a8 50%,
-        #5e04a8 100%
-    );
-    border-radius: 50%
+
+#praSprint {
+    background: linear-gradient(to right, #145c26 0%, #145c26 50%, #5e04a8 50%, #5e04a8 100%);
+    border-radius: 50%;
 }
-#praQual{
-    background: linear-gradient(
-        to right,
-        #145c26 0%,
-        #145c26 50%,
-        #a81a12 50%,
-        #a81a12 100%
-    );
-    border-radius: 50%
+
+#praQual {
+    background: linear-gradient(to right, #145c26 0%, #145c26 50%, #a81a12 50%, #a81a12 100%);
+    border-radius: 50%;
 }
-#sprintQual{
-    background: linear-gradient(
-        to right,
-        #00466e 0%,
-        #00466e 50%,
-        #a81a12 50%,
-        #a81a12 100%
-    );
-    border-radius: 50%
+
+#sprintQual {
+    background: linear-gradient(to right, #00466e 0%, #00466e 50%, #a81a12 50%, #a81a12 100%);
+    border-radius: 50%;
 }
-section#tory{
+
+section#tory {
     justify-content: center;
 }
-section#tory article{
+
+section#tory article {
     margin-left: 3vw;
     margin-right: 3vw;
 }
-hr{
+
+hr {
     size: 2;
     color: #F0F7F4;
     width: 90%;
 }
+
+section#zespoly {
+    flex: 33%;
+}
+
+section#zespoly article {
+    flex-wrap: wrap;
+    flex: 33%;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
