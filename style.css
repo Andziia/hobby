@@ -186,7 +186,7 @@ section {
     text-align: justify;
 }
 
-article#title{
+article.title{
     flex: 100% !important;
 }
 
@@ -232,18 +232,18 @@ article p span {
     color: #a81a12;
 }
 
-article#rywalizacja{
+article.rywalizacja{
     flex: 100%;
 }
 
-ul#rywalizacja {
+article.rywalizacja ul{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
 
-ul#rywalizacja li {
+article.rywalizacja ul{
     width: 50%;
     padding: 20px;
 }
@@ -252,7 +252,7 @@ li h3 {
     text-decoration: underline;
 }
 
-article#img {
+article.img {
     text-align: center;
 }
 
@@ -292,40 +292,40 @@ section#calendar li {
     border-radius: 5em;
 }
 
-#practice {
+.practice {
     background-color: #145c26;
     border-radius: 50%;
 }
 
-#sprint {
+.sprint {
     background-color: #00466e;
 }
 
-#qual {
+.qual {
     background-color: #a81a12;
     border-radius: 50%;
 }
 
-#grand {
+.grand {
     background-color: #e2a600;
     border-radius: 50%;
 }
 
-#sprintShoot {
+.sprintShoot {
     background-color: #5e04a8;
 }
 
-#praSprint {
+.praSprint {
     background: linear-gradient(to right, #145c26 0%, #145c26 50%, #5e04a8 50%, #5e04a8 100%);
     border-radius: 50%;
 }
 
-#praQual {
+.praQual {
     background: linear-gradient(to right, #145c26 0%, #145c26 50%, #a81a12 50%, #a81a12 100%);
     border-radius: 50%;
 }
 
-#sprintQual {
+.sprintQual {
     background: linear-gradient(to right, #00466e 0%, #00466e 50%, #a81a12 50%, #a81a12 100%);
     border-radius: 50%;
 }
@@ -373,7 +373,7 @@ img, video {
     height: auto;
 }
 
-section#zespoly article#img{
+section#zespoly article.img{
     background-color: #5e5e5e34;
     background-clip: content-box;
     border-radius: 5em;
@@ -418,12 +418,12 @@ section#kierowcy td {
     white-space: normal;
 }
 
-#ikony img{
+.ikony img{
     width: 2em;
     vertical-align: middle;
     padding-right: 5px;
 }
-p#ikony{
+p.ikony{
     vertical-align: middle;
 }
 section#form{
