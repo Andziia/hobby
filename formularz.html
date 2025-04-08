@@ -8,8 +8,7 @@
     <link rel="shortcut icon" href="img/red-parentesi.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <span id=#gora></span>
+    <header id="gora">
         <a href="index.html" id="img"><img src="img/logo.png" alt="logo"></a>
         <nav>
             <ul>
@@ -29,12 +28,88 @@
             <p>Formularz kontaktowy</p>
         </div> 
     </div>
-
-    <section>
-
+    <section id="form">
+        <article>
+            <form>
+                <table>
+                    <tr>
+                      <td><label for="name">Imię:</label></td>
+                      <td><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                      <td><label for="surname">Nazwisko:</label></td>
+                      <td><input type="text" id="surname" name="surname" required></td>
+                    </tr>
+                    <tr>
+                      <td><label for="email">Adres email:</label></td>
+                      <td><input type="email" id="email" name="email" placeholder="np. jan.kowalski@wp.pl" required></td>
+                    </tr>
+                    <tr>
+                      <td><label for="phone">Numer telefonu:</label></td>
+                      <td><input type="tel" id="phone" name="phone" pattern="[0-9]{9}" placeholder="np. 123456789" required></td>
+                    </tr>
+                    <tr>
+                      <td><label for="dob">Data urodzenia:</label></td>
+                      <td><input type="date" id="uro" name="uro" required></td>
+                    </tr>
+                    <tr>
+                      <td><label for="driver">Ulubiony kierowca:</label></td>
+                      <td><input type="text" id="driver" name="driver" required></td>
+                    </tr>
+                    <tr>
+                      <td><label for="team">Ulubiony zespół:</label></td>
+                      <td>
+                        <select id="team" name="team" required>
+                          <option value="">-- Wybierz zespół --</option>
+                          <option value="redbull">Red Bull Racing</option>
+                          <option value="mercedes">Mercedes-AMG</option>
+                          <option value="ferrari">Scuderia Ferrari</option>
+                          <option value="mclaren">McLaren</option>
+                          <option value="astonmartin">Aston Martin</option>
+                          <option value="alpine">Alpine</option>
+                          <option value="williams">Williams</option>
+                          <option value="haas">Haas</option>
+                          <option value="rb">Racing Bulls</option>
+                          <option value="sauber">Sauber</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label>Jak oceniasz obecny sezon F1? (1-5)</label></td>
+                      <td>
+                        <label><input type="radio" name="season_rating" value="1" required>1</label>
+                        <label><input type="radio" name="season_rating" value="2">2</label>
+                        <label><input type="radio" name="season_rating" value="3">3</label>
+                        <label><input type="radio" name="season_rating" value="4">4</label>
+                        <label><input type="radio" name="season_rating" value="5">5</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label for="opinion">Twoja opinia o F1:</label></td>
+                      <td><textarea id="opinion" name="opinion" required></textarea></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <label><input type="checkbox" name="consent" required> Wyrażam zgodę na przetwarzanie danych osobowych</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <button type="submit">Wyślij</button>
+                        <button type="reset">Wyczyść</button>
+                      </td>
+                    </tr>
+                  </table>
+              </form>
+        </article>
     </section>
     <footer>
-        <p>Copyright &copy; 2025 Anna Wątko. Wszelkie prawa zastrzeżone.</p>
+        <p>Copyright &copy; 2025 Anna Wątko. Wszelkie prawa zastrzeżone. </p>
+        <p><a href="#gora">Powrót na początek</a></p>
+        <p id="ikony">
+            <a href="https://github.com/Andziia"><img src="img/github.png" id="github" alt="logo github">Github</a>
+            <a href="mailto:anna.watko@zse.krakow.pl"><img src="img/mail-xxl.png" alt="logo mail">Napisz do mnie</a>
+        </p>
     </footer>
 </body>
 </html>
