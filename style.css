@@ -9,9 +9,10 @@
 
 @media screen and (max-width: 1024px) {
     header {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
         padding: 10px 0;
+        flex: 20%;
     }
 
     header p, nav {
@@ -33,6 +34,7 @@
     article {
         flex: 100%;
         margin: 20px 10px;
+        width: 50%;
     }
 
     ul#rywalizacja li {
@@ -54,10 +56,15 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     background-color: #0E1A23;
     color: #F0F7F4;
     width: 100%;
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
 }
 
 header {
@@ -72,6 +79,7 @@ header {
     top: 0;
     z-index: 1;
     width: 100%;
+    font-size: clamp(1rem, 1.8vmin, 1.2rem)
 }
 
 footer {
@@ -93,24 +101,30 @@ header p {
     width: 20%;
     align-items: center;
 }
+header ul{
+    gap: 20px;
+}
 
 nav {
     width: 80%;
     position: relative;
     text-align: center;
-    font-size: large;
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
     font-weight: bold;
     z-index: 1;
 }
 
-header li {
+nav li {
     text-align: center;
     display: inline-block;
     width: auto;
     margin: 0;
     padding: 2vw 2vw;
+    font-size: clamp(1rem, 2vmin, 1.3rem);
 }
-
+header img{
+    float: left;
+}
 a {
     color: #F0F7F4;
     text-decoration: none;
@@ -120,7 +134,8 @@ a {
 a:hover:not(#img) {
     font-weight: bolder;
     color: #949494;
-    font-size: larger;
+    background-color: #0E1A23;
+    padding: 10px;
 }
 
 div.baner {
@@ -131,6 +146,7 @@ div.baner {
 img#baner {
     width: 100%;
     opacity: 50%;
+    height: auto;
 }
 
 .centered {
@@ -142,12 +158,12 @@ img#baner {
 
 .centered p {
     font-family: Lexend;
-    font-size: 2vw;
     color: #d0d4d2;
+    font-size: clamp(1.2rem, 3.5vw, 2.5rem);
     text-align: center;
 }
 
-.centered span {
+.centered span#red{
     color: #a81a12;
     font-weight: bold;
 }
@@ -161,23 +177,22 @@ section {
     text-align: justify;
 }
 
-article#title, article#rywalizacja{
+article#title{
     flex: 100% !important;
 }
 
 article h1 {
     font-family: 'Lexend';
     text-align: center;
-    font-size: xx-large;
-    margin: 50px;
+    margin: 2%;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
 }
 
-article {
-    margin-left: 50px;
-    margin-right: 50px;
+article{
+    margin-left: 5%;
+    margin-right: 5%;
     padding: 20px;
     flex: 40%;
-    font-size: large;
 }
 
 article h3 {
@@ -186,11 +201,17 @@ article h3 {
 }
 
 article video {
-    width: 100%;
+    width: auto;
+}
+video, img:not(header img){
+    min-width: 300px;
 }
 
 article img {
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 article p {
@@ -202,16 +223,19 @@ article p span {
     color: #a81a12;
 }
 
+article#rywalizacja{
+    flex: 100%;
+}
+
 ul#rywalizacja {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 ul#rywalizacja li {
-    flex: 40%;
+    width: 50%;
     padding: 20px;
 }
 
@@ -298,12 +322,16 @@ section#calendar li {
 }
 
 section#tory {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+    
 }
 
-section#tory article {
-    margin-left: 3vw;
-    margin-right: 3vw;
+section#tory article{
+    flex: 35%;
 }
 
 hr {
@@ -313,16 +341,31 @@ hr {
 }
 
 section#zespoly {
-    flex: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
 }
 
-section#zespoly article {
-    flex-wrap: wrap;
-    flex: 33%;
+section#zespoly article{
+    flex: 35%;
+}
+section#zespoly img{
+    max-width: 70%;
+    display: block;
+    margin: auto;
+    padding: 20px;
 }
 
 img, video {
     max-width: 100%;
     height: auto;
+}
+
+section#zespoly article#img{
+    background-color: #5e5e5e34;
+    background-clip: content-box;
+    border-radius: 5em;
 }
 
