@@ -261,8 +261,7 @@ section#calendar {
 }
 
 section#calendar article {
-    flex: 30%;
-    display: inline-block;
+    flex: 40%;
 }
 
 section#calendar table {
@@ -358,11 +357,11 @@ section#zespoly {
 }
 
 section#zespoly article{
-    flex: 35%;
+    flex: 45%;
     margin: 2vw;
 }
 section#zespoly img{
-    max-width: 70%;
+    width: 70%;
     display: block;
     margin: auto;
     padding: 20px;
@@ -391,6 +390,8 @@ section#kierowcy img{
     max-width: 80%;
     margin: 20px;
     border-radius: 5em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section#kierowcy table{
@@ -398,7 +399,8 @@ section#kierowcy table{
     width: 80%;
     height: 200px;
     text-align: center;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
     background-color: #5e5e5e34;
     border-radius: 5em;
