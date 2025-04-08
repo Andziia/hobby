@@ -102,6 +102,7 @@ footer p{
 
 header img {
     max-width: 150px;
+    padding: 1em;
 }
 
 header p {
@@ -387,8 +388,9 @@ section#kierowcy{
     text-align: center;
 }
 section#kierowcy img{
-    max-width: 50%;
+    max-width: 80%;
     margin: 20px;
+    border-radius: 5em;
 }
 
 section#kierowcy table{
@@ -440,24 +442,23 @@ section#form form{
 }
 section#form table{
     margin: 0 auto;
+    padding: 20px;
     width: 60%;
-    background-color: #5e5e5e34;
+    background-color: #0B141A;
     border-radius: 5em;
 }
 
 section#form tr{
     height: 5em;
 }
-
-
 input[type="text"],input[type="email"],input[type="tel"],input[type="date"],select{
-    background-color: #0b141a75;
+    background-color: #0E1A23;
     color: #F0F7F4;
     font-family: Lexend;
     background-clip: content-box;
     border-radius: 5em;
     border: none;
-    height: 5em;
+    height: 5vmin;
     width: 50vmin;
     text-align: center;
 }
@@ -472,9 +473,8 @@ input[type="checkbox"]{
     accent-color: #0b141a75;
 }
 
-
 section#form button{
-    background-color: #0b141a75;
+    background-color: #0E1A23;
     color: #F0F7F4;
     font-family: Lexend;
     background-clip: content-box;
@@ -487,21 +487,20 @@ section#form button{
 button:hover{
     font-weight: bolder;
     color: #949494;
-    background-color: #5e5e5e04;
     height: 6vmin;
 }
 label{
     font-weight: bold;
 }
 textarea{
-    background-color: #0b141a75;
+    background-color: #0E1A23;
     color: #F0F7F4;
     font-family: Lexend;
     background-clip: content-box;
     border-radius: 5em;
     border: none;
-    height: 5vmin;
-    width: 7vmin;
+    height: 10vmin;
+    width: 50vmin;
     text-align: center;
     vertical-align: middle;
     resize: none;
