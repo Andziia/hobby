@@ -369,3 +369,40 @@ section#zespoly article#img{
     border-radius: 5em;
 }
 
+section#kierowcy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+section#kierowcy img{
+    max-width: 50%;
+    margin: 20px;
+}
+
+section#kierowcy table{
+    table-layout: fixed;
+    width: 80%;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #5e5e5e34;
+    border-radius: 5em;
+    padding: 20px;
+
+}
+
+section#kierowcy tr {
+    height: min(2vw, 50px);
+    border-bottom: #d0d4d2 solid 1px;
+}
+
+section#kierowcy td {
+    width: min(2vw, 50px);
+    word-break: break-word;    
+    overflow-wrap: break-word; 
+    white-space: normal;
+}
