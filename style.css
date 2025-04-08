@@ -361,7 +361,7 @@ section#zespoly article{
     margin: 2vw;
 }
 section#zespoly img{
-    width: 70%;
+    max-width: 70%;
     display: block;
     margin: auto;
     padding: 20px;
@@ -374,7 +374,7 @@ img, video {
 
 section#zespoly article.img{
     background-color: #5e5e5e34;
-    background-clip: content-box;
+    background-clip: border-box; 
     border-radius: 5em;
 }
 
