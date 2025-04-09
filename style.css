@@ -50,6 +50,51 @@
     }
 }
 
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: row;
+        padding: 5px;
+    }
+
+    header p, nav {
+        width: 100%;
+    }
+
+    nav li {
+        display: block;
+        padding: 10px;
+    }
+
+    .centered p {
+        font-size: 5vw;
+    }
+
+    article {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    section#calendar article,
+    section#zespoly article,
+    section#tory article {
+        flex: 100%;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"],
+    input[type="date"], select, textarea {
+        width: 90%;
+    }
+
+    section#form table {
+        width: 90%;
+    }
+
+    section#kierowcy table {
+        width: 95%;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -79,7 +124,7 @@ header {
     top: 0;
     z-index: 1;
     width: 100%;
-    font-size: clamp(1rem, 1.8vmin, 1.2rem)
+    font-size: clamp(1rem, 1.8vmin, 1.2rem);
 }
 
 footer {
@@ -361,10 +406,10 @@ section#zespoly article{
     margin: 2vw;
 }
 section#zespoly img{
-    max-width: 70%;
+    width: 70%;
     display: block;
     margin: auto;
-    padding: 20px;
+    padding: 2em;
 }
 
 img, video {
@@ -376,6 +421,8 @@ section#zespoly article.img{
     background-color: #5e5e5e34;
     background-clip: border-box; 
     border-radius: 5em;
+    justify-self: center;
+    text-align: center;
 }
 
 section#kierowcy{
@@ -441,11 +488,12 @@ section#form article{
 
 section#form form{
     font-family: Lexend;
+    justify-self: center;
 }
 section#form table{
     margin: 0 auto;
-    padding: 20px;
-    width: 60%;
+    padding: 2em;
+    width: 100%;
     background-color: #0B141A;
     border-radius: 5em;
 }
@@ -461,14 +509,14 @@ input[type="text"],input[type="email"],input[type="tel"],input[type="date"],sele
     border-radius: 5em;
     border: none;
     height: 5vmin;
-    width: 50vmin;
+    width: 40vmin;
     text-align: center;
 }
 
 input[type="radio"]{
     text-align: center;
     accent-color: #0b141a75;
-    margin-left: 4em;
+    margin-left: 1.5em;
     margin-right: 1em;
 }
 input[type="checkbox"]{
@@ -502,7 +550,7 @@ textarea{
     border-radius: 5em;
     border: none;
     height: 10vmin;
-    width: 50vmin;
+    width: 40vmin;
     text-align: center;
     vertical-align: middle;
     resize: none;
